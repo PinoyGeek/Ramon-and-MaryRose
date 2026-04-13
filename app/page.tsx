@@ -91,20 +91,15 @@ export default function Home() {
               {/* <LoveStory /> */}
               <Countdown /> 
               {/* <Gallery /> */}
-
               <Details />
               {/* <GuestInformation /> */}
               <WeddingTimeline />
-      
               <Entourage />
-
               <GuestList />
-
               <BookOfGuests />
-              <Messages />
+              {/* <Messages /> */}
               {/* <PrincipalSponsors /> */}
               <FAQ />
-
               <Registry />
               <SnapShare />
 

@@ -20,9 +20,9 @@ export function Registry() {
   return (
     <Section
       id="registry"
-      className="relative overflow-hidden py-10 sm:py-12 md:py-16 lg:py-20"
+      className="relative overflow-hidden pt-10 sm:pt-14 md:pt-20 lg:pt-24 pb-0"
     >
-      <div className="relative z-10 text-center mb-6 sm:mb-8 md:mb-10 px-3 sm:px-4">
+      <div className="relative z-10 text-center mb-8 sm:mb-10 md:mb-12 px-3 sm:px-4">
         <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
           <div className="w-8 sm:w-12 md:w-16 h-px bg-motif-cream/60" />
           <div className="w-1.5 h-1.5 bg-motif-cream/80 rounded-full" />
@@ -32,26 +32,32 @@ export function Registry() {
         </div>
         
         <h2 
-          className="lighten-regular text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px] xl:text-[80px] leading-tight text-motif-cream mb-2 sm:mb-3 md:mb-4"
+          className="lighten-regular text-[40px] sm:text-[50px] md:text-[60px] lg:text-[70px] xl:text-[80px] leading-tight text-motif-cream mb-3 sm:mb-4 md:mb-5"
           style={{ color: 'var(--color-motif-cream)' }}
         >
           Gift Guide
         </h2>
         
-        <p className="text-xs sm:text-sm md:text-base lg:text-lg text-motif-cream/90 font-light max-w-2xl mx-auto leading-relaxed px-2">
-        With hearts full of gratitude, we ask only for your presence and prayers as we celebrate together. Should you wish to bless us further, a gift toward our future would be a blessing we will always treasure. 
-
+        <p className="text-xs sm:text-sm md:text-base lg:text-lg text-motif-cream/90 font-light max-w-2xl mx-auto leading-relaxed px-2 mb-6 sm:mb-8 md:mb-10">
+          If you were thinking of giving a gift, to help us on our way.
+          <br className="hidden sm:block" />
+          A gift of currency towards our home, would really make our day.
+          <br className="hidden sm:block" />
+          However, if you prefer to purchase a gift, feel free to surprise us in your own way.
         </p>
-        
-        <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">
+
+        {/* bottom decorative accent */}
+        {/* <div className="flex items-center justify-center gap-2">
+          <div className="w-8 sm:w-12 md:w-16 h-px bg-motif-cream/40" />
+          <div className="w-1 h-1 bg-motif-cream/60 rounded-full" />
           <div className="w-1.5 h-1.5 bg-motif-cream/80 rounded-full" />
-          <div className="w-1.5 h-1.5 bg-motif-cream/60 rounded-full" />
-          <div className="w-1.5 h-1.5 bg-motif-cream/80 rounded-full" />
-        </div>
+          <div className="w-1 h-1 bg-motif-cream/60 rounded-full" />
+          <div className="w-8 sm:w-12 md:w-16 h-px bg-motif-cream/40" />
+        </div> */}
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6">
-  {/* GCASH QR toggle */}
+ 
   <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 mb-6 sm:mb-8">
         <h3 className="lighten-regular text-[24px] sm:text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px] leading-tight text-motif-cream text-center mb-4 sm:mb-6"
         style={{ color: 'var(--color-motif-cream)' }}
@@ -59,7 +65,7 @@ export function Registry() {
           {activeItem?.label}
         </h3>
         <div className="flex flex-col items-center gap-4 sm:gap-6">
-          {/* Toggle buttons */}
+        
           <div className="inline-flex rounded-lg border border-motif-cream/40 bg-motif-cream/5 p-1">
             {GCASH_QR.map((item) => (
               <button
@@ -76,7 +82,7 @@ export function Registry() {
               </button>
             ))}
           </div>
-          {/* Active QR image */}
+     
           <div className="flex flex-col items-center">
             <div className="relative w-52 h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 rounded-xl overflow-hidden bg-white shadow-lg">
             <CloudinaryImage
@@ -111,7 +117,7 @@ export function Registry() {
             {siteConfig.couple.brideNickname} and {siteConfig.couple.groomNickname}
           </p>
         </div>
-      </div>
+      </div> 
     </Section>
   );
 }
